@@ -1,0 +1,29 @@
+{
+  "name": "http-image-size",
+  "version": "1.0.0",
+  "description": "Detect image dimensions via http.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jo/http-image-size.git"
+  },
+  "keywords": [
+    "image",
+    "size",
+    "dimensions",
+    "http",
+    "network"
+  ],
+  "author": "Johannes J. Schmidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jo/http-image-size/issues"
+  },
+  "homepage": "https://github.com/jo/http-image-size",
+  "dependencies": {
+    "image-size": "^0.2.5"
+  }
+}
