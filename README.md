@@ -14,6 +14,7 @@ size('http://die-tf.de/fuck-yeah/fuck-yeah.jpg', function(err, dimensions, lengt
 ```
 
 The callback receives three arguments: `err`, `dimensions`, `length`:
+
 `dimensions` is in the form `{ height: 1063, width: 1600 }`.  
 `length` is the number of bytes loaded.
 
