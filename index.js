@@ -9,12 +9,19 @@
 
 var url = require('url');
 var http = require('http');
+var https = require('https');
 var sizeOf = require('image-size');
 
 module.exports = function(imgUrl, done) {
   var options = url.parse(imgUrl);
+  var client;
+  if (options.protocol === 'https:') {
+    client = https;
+  } else {
+    client = http;
+  }
 
-  var req = http.get(options, function(response) {
+  var req = client.get(options, function(response) {
     var buffer = new Buffer([]);
 
     response.on('data', function(chunk) {
