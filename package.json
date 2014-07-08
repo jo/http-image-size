@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/jo/http-image-size",
   "dependencies": {
-    "image-size": "^0.2.5"
+    "image-size": "^0.3.0"
   }
 }
