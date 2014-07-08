@@ -19,8 +19,10 @@ module.exports = function(imgUrl, done) {
   var client;
   if (options.protocol === 'https:') {
     client = https;
-  } else {
+  } else if (options.protocol === 'http:') {
     client = http;
+  } else {
+    throw new Error('The string should have "http" or "https" scheme.');
   }
 
   var req = client.get(options, function(response) {
