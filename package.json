@@ -4,7 +4,7 @@
   "description": "Detect image dimensions via http.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
   "homepage": "https://github.com/jo/http-image-size",
   "dependencies": {
     "image-size": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^1",
+    "require-main": "^0.1.0"
   }
 }
