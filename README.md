@@ -1,6 +1,7 @@
 # http-image-size
 
 [![NPM version](https://badge.fury.io/js/http-image-size.svg)](http://badge.fury.io/js/http-image-size)
+[![Build Status](https://travis-ci.org/jo/http-image-size.svg?branch=master)](https://travis-ci.org/jo/http-image-size)
 [![Dependency Status](https://david-dm.org/jo/http-image-size.svg)](https://david-dm.org/jo/http-image-size)
 [![devDependency Status](https://david-dm.org/jo/http-image-size/dev-status.svg)](https://david-dm.org/jo/http-image-size#info=devDependencies)
 
