@@ -1,4 +1,9 @@
 # http-image-size
+
+[![NPM version](https://badge.fury.io/js/http-image-size.svg)](http://badge.fury.io/js/http-image-size)
+[![Dependency Status](https://david-dm.org/jo/http-image-size.svg)](https://david-dm.org/jo/http-image-size)
+[![devDependency Status](https://david-dm.org/jo/http-image-size/dev-status.svg)](https://david-dm.org/jo/http-image-size#info=devDependencies)
+
 Detect image dimensions via http or https.  
 It does so by trying to extract image size via
 [image-size](https://github.com/netroy/image-size) on each chunk received. When
