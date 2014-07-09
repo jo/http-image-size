@@ -10,6 +10,8 @@
  *
  */
 
+'use strict';
+
 var size = require('..');
 var url = process.argv[2];
 

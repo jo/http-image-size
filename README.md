@@ -1,5 +1,5 @@
 # http-image-size
-Detect image dimensions via http.  
+Detect image dimensions via http or https.  
 It does so by trying to extract image size via
 [image-size](https://github.com/netroy/image-size) on each chunk received. When
 the dimensions are present, the request is aborted.

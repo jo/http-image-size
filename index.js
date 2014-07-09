@@ -32,7 +32,6 @@ module.exports = function(imgUrl, done) {
     response
     .on('data', function(chunk) {
       buffer = Buffer.concat([buffer, chunk]);
-      
       try {
         dimensions = sizeOf(buffer);
         req.abort();
