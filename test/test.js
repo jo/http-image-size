@@ -35,17 +35,17 @@ describe('http-image-size', function() {
     });
   });
   it('should throw an error when the URL doesn\'t have http(s) scheme.', function() {
-    assert.throws(size.bind(null, 'ftp://dummy.com/foo.jpg', function() {}));
+    assert.throws(size.bind(null, 'ftp://dummy.com/foo.jpg', function() {}), Error);
   });
   it('should pass an error when the image is not found.', function(done) {
     size('http://jo.github.io/http-image-size/dummy.gif', function(err) {
-      assert.ifError(err);
+      assert.throws(assert.ifError.bind(null, err));
       done();
     });
   });
-  it('should pass an error when the URL is not an image URL.', function(done) {
+  it('should pass an type error when the URL is not an image URL.', function(done) {
     size('http://example.com/', function(err) {
-      assert.ifError(err);
+      assert.throws(assert.ifError.bind(null, err), TypeError);
       done();
     });
   });

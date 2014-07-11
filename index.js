@@ -28,19 +28,27 @@ module.exports = function(imgUrl, done) {
   var req = client.get(options, function(response) {
     var buffer = new Buffer([]);
     var dimensions;
+    var imageTypeDetectionError;
 
     response
     .on('data', function(chunk) {
       buffer = Buffer.concat([buffer, chunk]);
       try {
         dimensions = sizeOf(buffer);
-        req.abort();
-      } catch(e) {}
+      } catch (e) {
+        imageTypeDetectionError = e;
+        return;
+      }
+      req.abort();
     })
     .on('error', function(err) {
       done(err);
     })
     .on('end', function() {
+      if (!dimensions) {
+        done(imageTypeDetectionError);
+        return;
+      }
       done(null, dimensions, buffer.length);
     });
   });
