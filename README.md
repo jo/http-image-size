@@ -25,5 +25,5 @@ The callback receives three arguments: `err`, `dimensions`, `length`:
 `length` is the number of bytes loaded.
 
 ## License
-Copyright (c) 2014 Johannes J. Schmidt
+Copyright (c) 2014 Johannes J. Schmidt  
 Licensed under the MIT license.
